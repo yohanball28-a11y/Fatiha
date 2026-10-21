@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1e293b">
+  <title>Fatiha - Assistante en maths et physique-chimie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="avatar">F</div>
+    <div class="titles">
+      <h1>Fatiha</h1>
+      <p id="status">Mode démo</p>
+    </div>
+    <button id="clearBtn" class="icon-btn" aria-label="Nouvelle conversation" title="Nouvelle conversation">⟲</button>
+  </header>
+
+  <main id="chat" class="chat" aria-live="polite"></main>
+
+  <div id="suggestions" class="suggestions">
+    <button type="button" class="chip">Résous 2x + 3 = 11</button>
+    <button type="button" class="chip">Calcule (3 + 4) * 2^3</button>
+    <button type="button" class="chip">Qu'est-ce qu'une mole ?</button>
+    <button type="button" class="chip">Loi d'Ohm</button>
+  </div>
+
+  <form id="composer" class="composer">
+    <textarea id="input" rows="1" placeholder="Pose ta question à Fatiha..."></textarea>
+    <button type="submit" id="sendBtn" class="send-btn" aria-label="Envoyer">➤</button>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>
